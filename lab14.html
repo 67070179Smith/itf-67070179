@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming 2</title>
+    <link rel="stylesheet" href="lab14.css">
+</head>
+<body>
+    <p class="header-p">My Lab14 Profile</p>
+    <div class="profile">
+        <div class="notice">
+            <p>1</p>
+        </div>
+    </div>
+    <a href="https://github.com/67070179Smith/itf-67070179" class="user">Hello, ...</a>
+    <div class="naming">
+        <label for="">Set your username</label><input type="text" class="name" placeholder="Enter your name..."><button class="clickingname">Set</button>
+    </div>
+    <div class="urling">
+        <label for="">Set your profile picture</label><input type="url" placeholder="Enter your url..."><button onclick class="clickingurl">Set</button>
+    </div>
+    <script>
+        document.getElementsByClassName("clickingname").addEventListener("click",function() {
+            let input = document.getElementsByClassName("name").value;
+            document.getElementsByClassName("user").textContent = "Hello, " + input.value;
+        });
+    </script>
+</body>
+</html>
